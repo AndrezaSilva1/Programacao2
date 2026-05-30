@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    color: red;
+}
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    text-decoration: none;
+}

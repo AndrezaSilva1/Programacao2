@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Editar
+{% endblock %}
+{% block content %}
+<h1>Página editar Livro</h1>
+<form method="POST">
+<input
+type="text"
+name="nome"
+value="{{ livro['nome'] }}">
+<br><br>
+<input
+type="text"
+name="genero"
+value="{{ livro['genero'] }}">
+<br><br>
+<button type="submit">
+Atualizar a página
+</button>
+</form>
+{% endblock %}

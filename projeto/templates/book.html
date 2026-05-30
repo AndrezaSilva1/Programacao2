@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+Livros
+{% endblock %}
+{% block content %}
+<h1>Lista de book</h1>
+<a href="/livros?genero=Romance">
+Genero romance
+</a>
+<a href="/livros?genero=Aventura">
+Genero aventura
+</a>
+<a href="/livros?genero=Ficcao">
+Genero ficção
+</a>
+<br><br>
+<ul>
+{% for livro in livros %}
+<li>
+{{ livro["nome"] }} - {{ livro["genero"] }}
+<a href="/editar/{{ livro['id'] }}">
+book editar
+</a>
+<a href="/remover/{{ livro['id'] }}">
+book remover
+</a>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

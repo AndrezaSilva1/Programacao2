@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+<a href="/">Página inicio</a>
+<a href="/livros">Book</a>
+<a href="/novo">O novo book</a>
+<a href="/logout">Sair da página</a>
+</nav>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>
